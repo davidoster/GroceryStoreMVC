@@ -24,4 +24,11 @@
     <welcome-file-list>
         <welcome-file>redirect.jsp</welcome-file>
     </welcome-file-list>
+    <resource-ref>
+        <description>jdbc:mysql://localhost:3306/eshop1?serverTimezone=Europe/Athens</description>
+        <res-ref-name>rdgdfg</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+    </resource-ref>
 </web-app>

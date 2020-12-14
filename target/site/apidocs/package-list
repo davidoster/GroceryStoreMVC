@@ -1,0 +1,4 @@
+org.pcedu.grocerystoremvc.controllers
+org.pcedu.grocerystoremvc.dao
+org.pcedu.grocerystoremvc.entities
+org.pcedu.grocerystoremvc.services

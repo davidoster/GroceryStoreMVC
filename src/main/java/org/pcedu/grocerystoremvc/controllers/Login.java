@@ -46,6 +46,7 @@ public class Login implements Controller {
 //           message = "Correct credentials!!!";
 //           model.addObject("message", message);
             RequestDispatcher rd =  request.getRequestDispatcher("/admin.html");
+            request.setAttribute("projectName", "John's Grocery Store");
             request.setAttribute("username", request.getParameter("username"));
             rd.forward(request, response);
        }

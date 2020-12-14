@@ -15,8 +15,14 @@ import org.springframework.web.servlet.mvc.Controller;
 public class Admin implements Controller {
 
     @Override
-    public ModelAndView handleRequest(HttpServletRequest hsr, HttpServletResponse hsr1) throws Exception {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) 
+            throws Exception {
+        ModelAndView model = new ModelAndView("admin");
+        String projectName = (String)request.getAttribute("projectName");
+        String username    = (String)request.getAttribute("username");
+        model.addObject("projectName",projectName);
+        model.addObject("username",username);
+        return(model);
     }
     
 }
